@@ -1,0 +1,75 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 209A      		sbi 36-32,0
+  25               	.LM3:
+  26 0002 2198      		cbi 36-32,1
+  27               	.LM4:
+  28 0004 299A      		sbi 37-32,1
+  29               	.LM5:
+  30 0006 289A      		sbi 37-32,0
+  31               	.LBB12:
+  32               	.LBB13:
+  33               	.LBB14:
+  34               	.LBB15:
+  35               	.LM6:
+  36 0008 20E6      		ldi r18,lo8(-5536)
+  37 000a 3AEE      		ldi r19,hi8(-5536)
+  38               	.LVL0:
+  39               	.L4:
+  40               	.LBE15:
+  41               	.LBE14:
+  42               	.LBE13:
+  43               	.LBE12:
+  44               	.LM7:
+  45 000c 1999      		sbic 35-32,1
+  46 000e 00C0      		rjmp .L2
+  47               	.LM8:
+  48 0010 289A      		sbi 37-32,0
+  49 0012 00C0      		rjmp .L3
+  50               	.L2:
+  51               	.LM9:
+  52 0014 2898      		cbi 37-32,0
+  53               	.L3:
+  54               	.LBB19:
+  55               	.LBB18:
+  56               	.LBB17:
+  57               	.LBB16:
+  58               	.LM10:
+  59 0016 C901      		movw r24,r18
+  60               	/* #APP */
+  61               	 ;  105 "c:/electronics/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+  62 0018 0197      		1: sbiw r24,1
+  63 001a 01F4      		brne 1b
+  64               	 ;  0 "" 2
+  65               	/* #NOAPP */
+  66 001c 00C0      		rjmp .L4
+  67               	.LBE16:
+  68               	.LBE17:
+  69               	.LBE18:
+  70               	.LBE19:
+  71               	.LFE6:
+  97               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\georo\AppData\Local\Temp/ccYLFzTC.s:2      *ABS*:0000003f __SREG__
+C:\Users\georo\AppData\Local\Temp/ccYLFzTC.s:3      *ABS*:0000003e __SP_H__
+C:\Users\georo\AppData\Local\Temp/ccYLFzTC.s:4      *ABS*:0000003d __SP_L__
+C:\Users\georo\AppData\Local\Temp/ccYLFzTC.s:5      *ABS*:00000034 __CCP__
+C:\Users\georo\AppData\Local\Temp/ccYLFzTC.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\georo\AppData\Local\Temp/ccYLFzTC.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\georo\AppData\Local\Temp/ccYLFzTC.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS
